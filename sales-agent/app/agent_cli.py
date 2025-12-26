@@ -34,7 +34,7 @@ async def main():
         "sales_db": {
             "transport": "stdio",
             "command": "python",
-            "args": ["./servers/db_server.py"],
+            "args": ["sales-agent/servers/db_server.py"],
         }
     })
 
