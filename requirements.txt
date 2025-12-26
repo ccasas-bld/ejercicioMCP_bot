@@ -1,0 +1,9 @@
+fastmcp<3
+langchain
+langchain-openai
+langchain-mcp-adapters
+python-dotenv
+pandas
+matplotlib
+openpyxl
+sqlparse

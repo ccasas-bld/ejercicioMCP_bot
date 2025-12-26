@@ -1,0 +1,82 @@
+cat > .gitignore <<'EOF'
+# =========================================================
+# Python (general) + env/secrets + tooling (decente)
+# =========================================================
+
+# --- Secrets / environment files ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# --- Python bytecode / cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- C extensions ---
+*.so
+
+# --- Virtual environments ---
+.venv/
+venv/
+ENV/
+env/
+.virtualenv/
+pip-wheel-metadata/
+
+# --- Packaging / build artifacts ---
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+pip-log.txt
+
+# --- Unit test / coverage ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+
+# --- Jupyter / IPython ---
+.ipynb_checkpoints/
+.ipython/profile_default/
+.profile
+
+# --- Type checking ---
+.mypy_cache/
+.pyre/
+.pytype/
+.dmypy.json
+
+# --- Lint / format tools ---
+.ruff_cache/
+
+# --- Docs / mkdocs ---
+site/
+
+# --- IDEs / editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+
+# --- Local config / misc ---
+*.sqlite3
+*.db
+instance/
+EOF
